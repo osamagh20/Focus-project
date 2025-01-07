@@ -57,7 +57,6 @@ Focus aims to streamline workflows, making it easier for photographers to access
 - [Figma Design](https://www.figma.com/proto/SM3UpZt8aHlHy050JT8Zn4/Foucs?node-id=46-143&p=f&t=PrH32mXLcvCJfShs-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
 - [Presentation](https://www.canva.com/design/DAGba3bZYyY/ynAFwYLwEkRmaFzvbNt7NQ/edit?utm_content=DAGba3bZYyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [PostMan api](https://documenter.getpostman.com/view/30968689/2sAXqqdNjT)
-- ![Untitled (1)](https://github.com/user-attachments/assets/e3ee79e7-eabf-4cd8-b25c-fb4b31d8e012)
 
 
 ---
