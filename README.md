@@ -74,4 +74,14 @@ Focus aims to streamline workflows, making it easier for photographers to access
 ![Class Diagram](https://github.com/user-attachments/assets/3fde31ab-ad29-433b-8449-c22e9e397d18)
 
 
-  
+  MY work on the Project 
+I have Make the Photographer,Tool,RentTool,match CRUD and Models and Controller and Services and DTO and Repositories . 
+I have also i have done this extra : 
+- getTournamentsByGame(EXTRA)
+- getTournamentsByCity(EXTRA)
+- getTournamentsByAttendanceTypeOnline(EXTRA)
+- getTournamentsByAttendanceTypeOnsite(EXTRA)
+- getTournamentsByStatusOngoing(EXTRA)
+- getTournamentsByStatusActive(EXTRA)
+- getTournamentsByStatusClosingSoon(EXTRA)
+- getTournamentsByStatusFinished(EXTRA)
