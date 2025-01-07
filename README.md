@@ -72,15 +72,89 @@ Focus aims to streamline workflows, making it easier for photographers to access
 
 ![Class Diagram](https://github.com/user-attachments/assets/3fde31ab-ad29-433b-8449-c22e9e397d18)
 
+## Entity
+
+### Core Entities:
+- **MyUser**: Represents users of the platform (Photographers, Editors, and Studios).  
+- **Photographers**: Professionals who create editing requests, book spaces, and manage equipment rentals.  
+- **Editors**: Professionals responding to editing requests.  
+- **Studios**: Business entities managing studio spaces and shifts.  
+- **RequestEditing**: Handles editing requests created by photographers.  
+- **OfferEditing**: Tracks editing offers made by editors.  
+- **BookSpace**: Manages bookings for spaces.  
+- **Space**: Represents individual spaces within a studio.  
+- **Shift**: Tracks availability for a specific space.  
+- **Tools**: Represents equipment available for rental.  
+- **RentalTool**: Tracks rental transactions for tools.  
+- **Media**: Stores uploaded media content.  
+
+---
+
+## Relation
+
+### Relationships:
+- **Photographer ↔ Editor**:  
+  - Manages **Requests** and **Offers** for editing tasks.  
+  - Photographers create **RequestEditing**, and Editors respond with **OfferEditing**.
+
+- **Photographer ↔ Studio**:  
+  - Handles **Bookings** for studio spaces.  
+  - Photographers book **Spaces** under **Studios** for photoshoots.
+
+- **Photographer ↔ Photographer**:  
+  - Facilitates **Equipment Rentals**.  
+  - Photographers rent tools from each other via **Tools** and **RentalTool**.
+
+- **Admin ↔ Studio**:  
+  - Oversees **Studio Activation** and **Management**.  
+  - Admins activate or reject studio accounts.
+
+- **Photographer ↔ Space**:  
+  - Manages booking and scheduling through **BookSpace**.  
+  - **Shift** entities are linked to **Spaces** for managing availability.
+
+- **Photographer ↔ Media**:  
+  - Photographers upload and manage media for portfolio visibility.  
+  - Media content is stored in the **Media** entity.
+
+- **Editor ↔ Media**:  
+  - Editors upload and manage media associated with their profiles.  
+  - **Media** is linked to their **EditorProfiles**.
+
+- **Studio ↔ Space**:  
+  - Studios own and manage multiple **Spaces** for bookings.
+
+- **Space ↔ Shift**:  
+  - **Shifts** represent availability and scheduling for specific **Spaces**.
+
+- **Photographer ↔ Tools**:  
+  - Photographers own and rent out **Tools** through the platform.  
+  - **RentalTool** tracks the details of each rental transaction.
+
+---
+
 
   MY work on the Project 
 I have Make the Photographer,Tool,RentTool,match CRUD and Models and Controller and Services and DTO and Repositories . 
 I have also i have done this extra : 
-- getTournamentsByGame(EXTRA)
-- getTournamentsByCity(EXTRA)
-- getTournamentsByAttendanceTypeOnline(EXTRA)
-- getTournamentsByAttendanceTypeOnsite(EXTRA)
-- getTournamentsByStatusOngoing(EXTRA)
-- getTournamentsByStatusActive(EXTRA)
-- getTournamentsByStatusClosingSoon(EXTRA)
-- getTournamentsByStatusFinished(EXTRA)
+ - rentToolRequest
+ - getToolsByNumberOfRental
+ - getToolsByNumberOfRentalOrAbove
+ - getToolsByNumberOfRentalOrBelow
+ - getMyTools
+ - getPhotographer Tools
+ - getStudioByCity
+ - getSpecificStudio
+ - addTool
+ - getAllSpaces
+ - viewRentalTools
+ - viewMyRentTools
+ - PhotographerRegistration
+ - ActivateStudio
+ - rejectStudio
+
+
+
+
+
+
